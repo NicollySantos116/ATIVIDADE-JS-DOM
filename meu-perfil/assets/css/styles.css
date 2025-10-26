@@ -1,0 +1,129 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff0f7; /* fundo clarinho rosa */
+  color: #4b2b44; /* texto roxo-rosado */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background-color 0.6s, color 0.6s;
+}
+
+header {
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #ffc0e8, #ff9cd9); /* gradiente rosa */
+  color: #4b2b44;
+  border-bottom: 2px solid #ffb6e6;
+  box-shadow: 0 2px 10px rgba(255, 182, 230, 0.3);
+}
+
+.minha-foto {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ff99d6;
+  box-shadow: 0 0 15px #ffb3e0;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  background-color: #ff7fcf;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  box-shadow: 0 3px 8px rgba(255, 127, 207, 0.5);
+}
+
+button:hover {
+  background-color: #ff57b0;
+  transform: scale(1.05);
+}
+
+section {
+  margin: 2.5rem auto;
+  max-width: 700px;
+  background-color: #f9cce2;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(255, 153, 204, 0.2);
+  transition: background-color 0.6s, color 0.6s;
+}
+
+h2 {
+  color: #ff4da6;
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #ffd9f0;
+  margin: 0.5rem auto;
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+a {
+  color: #ff66c1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ff33a8;
+}
+
+footer {
+  padding: 1.5rem;
+  background-color: #ffd9f0;
+  color: #993366;
+  border-top: 2px solid #ffb6e6;
+  font-size: 0.95rem;
+}
+
+/* Modo escuro rosa */
+body.dark-mode {
+  background-color: #2c0b24;
+  color: #ffccf0;
+}
+
+body.dark-mode header {
+  background: linear-gradient(135deg, #660033, #993366);
+  color: #ffd6f0;
+  border-bottom: 2px solid #cc3399;
+  box-shadow: 0 2px 15px rgba(204, 51, 153, 0.3);
+}
+
+body.dark-mode section {
+  background-color: #3d0e38;
+  color: #ffccf0;
+  box-shadow: 0 5px 20px rgba(204, 51, 153, 0.3);
+}
+
+body.dark-mode li {
+  background-color: #5a0f4c;
+}
+
+body.dark-mode footer {
+  background-color: #3d0e38;
+  border-top: 2px solid #cc3399;
+  color: #ff99d6;
+}
+
+body.dark-mode button {
+  background-color: #cc3399;
+  box-shadow: 0 3px 10px rgba(204, 51, 153, 0.5);
+}
+
+body.dark-mode button:hover {
+  background-color: #ff33a8;
+  transform: scale(1.05);
+}
